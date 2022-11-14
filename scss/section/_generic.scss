@@ -1,0 +1,126 @@
+.generic {
+  padding-bottom: 100px;
+  &__wrapper {
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-row-gap: 42px;
+    grid-column-gap: 25px;
+    width: 100%;
+    max-width: 695px;
+
+    &-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      grid-row-gap: 25px;
+      grid-column-gap: 40px;
+      margin-bottom: 60px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .list {
+        &__item {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &-3 {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto;
+      grid-row-gap: 24px;
+      grid-column-gap: 44px;
+      width: 100%;
+      max-width: 750px;
+      .list {
+        &__item {
+          margin-bottom: 0;
+
+          &:nth-child(1) {
+            grid-row: 1/3;
+          }
+        }
+      }
+    }
+
+    &-4 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .list {
+        &__item {
+          margin-bottom: 0;
+          max-width: 460px;
+        }
+      }
+    }
+
+    .list {
+      &__item {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 850px) {
+  .generic {
+    &__list {
+      &-4 {
+        flex-direction: column;
+        .list {
+          &__item {
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .generic {
+    padding-bottom: 70px;
+    &__list {
+      &-2 {
+        grid-row-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 44px;
+      }
+      &-3 {
+        grid-template-columns: repeat(1, 1fr);
+        .list {
+          &__item {
+            &:nth-child(1) {
+              grid-row: 1/2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .generic {
+    &__list {
+      grid-row-gap: 20px;
+      grid-template-columns: repeat(1, 1fr);
+      &-3 {
+        grid-row-gap: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.schedule {
+  padding-bottom: 150px;
+  &__wrapper {
+  }
+
+  &__img {
+  }
+}
+@media (max-width: 950px) {
+  .schedule {
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 550px) {
+  .schedule {
+    padding-bottom: 60px;
+  }
+}

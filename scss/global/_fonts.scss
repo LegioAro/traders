@@ -1,0 +1,110 @@
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Stapel',sans-serif;
+// font-family: 'Stapel Extra',sans-serif;
+// font-family: 'Stapel Expanded',sans-serif;
+// font-family: 'Stapel Semi Expanded',sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: 'Stapel';
+  src: url('../fonts/Stapel-Light.eot');
+  src: url('../fonts/Stapel-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Stapel-Light.woff2') format('woff2'),
+    url('../fonts/Stapel-Light.woff') format('woff'),
+    url('../fonts/Stapel-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stapel';
+  src: url('../fonts/Stapel-Medium.eot');
+  src: url('../fonts/Stapel-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Stapel-Medium.woff2') format('woff2'),
+    url('../fonts/Stapel-Medium.woff') format('woff'),
+    url('../fonts/Stapel-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stapel';
+  src: url('../fonts/Stapel-Bold.eot');
+  src: url('../fonts/Stapel-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Stapel-Bold.woff2') format('woff2'),
+    url('../fonts/Stapel-Bold.woff') format('woff'),
+    url('../fonts/Stapel-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stapel Extra';
+  src: url('../fonts/Stapel-ExtraBold.eot');
+  src: url('../fonts/Stapel-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Stapel-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Stapel-ExtraBold.woff') format('woff'),
+    url('../fonts/Stapel-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stapel Expanded';
+  src: url('../fonts/Stapel-ExpandedBlack.eot');
+  src: url('../fonts/Stapel-ExpandedBlack.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Stapel-ExpandedBlack.woff2') format('woff2'),
+    url('../fonts/Stapel-ExpandedBlack.woff') format('woff'),
+    url('../fonts/Stapel-ExpandedBlack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stapel Semi Expanded';
+  src: url('../fonts/Stapel-SemiExpandedBlack.eot');
+  src: url('../fonts/Stapel-SemiExpandedBlack.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Stapel-SemiExpandedBlack.woff2') format('woff2'),
+    url('../fonts/Stapel-SemiExpandedBlack.woff') format('woff'),
+    url('../fonts/Stapel-SemiExpandedBlack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?g4hkx7');
+  src: url('../fonts/icomoon.eot?g4hkx7#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?g4hkx7') format('truetype'),
+    url('../fonts/icomoon.woff?g4hkx7') format('woff'),
+    url('../fonts/icomoon.svg?g4hkx7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star:before {
+  content: '\e900';
+  color: var(--color);
+}
+.icon-star2:before {
+  content: '\e901';
+  color: var(--color);
+}

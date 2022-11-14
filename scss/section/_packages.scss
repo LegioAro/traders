@@ -1,0 +1,360 @@
+.packages {
+  padding-bottom: 84px;
+  &__wrapper {
+    position: relative;
+  }
+
+  &__title {
+    font-family: 'Stapel Expanded', sans-serif;
+    font-size: 24px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color);
+    width: 100%;
+    max-width: 730px;
+    margin-bottom: 65px;
+
+    span {
+      color: #fff;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    margin-bottom: 60px;
+  }
+
+  &__alert-wrapper {
+    display: none;
+    position: absolute;
+    top: -164px;
+    left: 0;
+  }
+
+  &__alert {
+    background-color: #0e1116;
+    border-radius: 7px;
+    padding: 12px 18px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__alert-title {
+    font-family: 'Stapel Expanded', sans-serif;
+    font-size: 13px;
+    line-height: 145%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  &__alert-text {
+    font-size: 9px;
+    line-height: 145%;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
+
+  &__alert-grad {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    border-radius: 7px;
+    background-image: linear-gradient(
+      90.25deg,
+      #72ccee 0.7%,
+      #3bd3c1 40.53%,
+      #5a9cce 59.25%,
+      #9d20e9 100.54%
+    );
+  }
+
+  &__alert-img {
+    position: absolute;
+    width: 99px;
+    height: 99px;
+
+    display: flex;
+    top: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__item-wrapper {
+    position: relative;
+
+    &.current {
+      .packages__item {
+        border: 0;
+      }
+      .packages__item-btn {
+        background-image: linear-gradient(
+          90.25deg,
+          #72ccee 0.7%,
+          #3bd3c1 40.53%,
+          #5a9cce 59.25%,
+          #9d20e9 100.54%
+        );
+      }
+      .packages__item-list-elem,
+      .packages__item-title-block {
+        border-bottom: 1px solid var(--color);
+      }
+    }
+  }
+
+  &__item {
+    border: 1px solid #ffffff;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    background-color: #0e1116;
+  }
+
+  &__item-grad {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    border-radius: 17px;
+    background-image: linear-gradient(
+      90.25deg,
+      #72ccee 0.7%,
+      #3bd3c1 40.53%,
+      #5a9cce 59.25%,
+      #9d20e9 100.54%
+    );
+  }
+
+  &__item-shadow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(98.25deg, #72ccee 0.7%, #3bd3c1 30.13%, #9d20e9 100.54%);
+    filter: blur(8px);
+    border-radius: 17px;
+  }
+
+  &__item-title-block {
+    padding: 25px 42px 14px;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  &__item-title {
+    font-family: 'Stapel Expanded', sans-serif;
+    font-size: 24px;
+    line-height: 145%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  &__item-title-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 145%;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
+
+  &__item-list {
+  }
+
+  &__item-list-elem {
+    padding: 23px 40px;
+    border-bottom: 1px solid #ffffff;
+    font-size: 16px;
+    line-height: 145%;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    span {
+      font-size: 32px;
+      line-height: 145%;
+      text-align: center;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &__item-info {
+    font-weight: 500;
+    height: 100%;
+    padding: 23px 40px;
+    font-size: 16px;
+    line-height: 145%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      font-weight: bold;
+      color: var(--color);
+    }
+
+    i {
+      font-style: normal;
+      font-weight: 300;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+    }
+
+    p {
+      margin-bottom: 23px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__item-btn {
+    font-family: 'Stapel Extra', sans-serif;
+    padding: 10px;
+    background: #8348e4;
+    border-radius: 0px 0px 17px 17px;
+    font-size: 20px;
+    line-height: 145%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    max-height: 100px;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 145%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1150px) {
+  .packages {
+    &__item-title-block {
+      padding: 24px 20px 14px;
+    }
+    &__item-title {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .packages {
+    &__items {
+      grid-column-gap: 20px;
+    }
+    &__item-btn {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .packages {
+    &__items {
+      width: 100%;
+      max-width: 550px;
+      margin: 0 auto 60px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__item-wrapper {
+      &.current {
+        margin-top: 160px;
+      }
+    }
+    &__alert-wrapper {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .packages {
+    &__title {
+      font-size: 20px;
+    }
+    &__text {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .packages {
+    &__items {
+      margin-bottom: 35px;
+    }
+    &__title {
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+    &__item-title {
+      font-size: 18px;
+      padding: 18px 20px 10px;
+      margin-bottom: 7px;
+    }
+    &__item-title-text {
+      font-size: 12px;
+    }
+    &__item-list-elem {
+      font-size: 12px;
+      padding: 18px 30px;
+      span {
+        font-size: 24px;
+      }
+    }
+    &__item-info {
+      font-size: 12px;
+      padding: 18px 30px;
+      p {
+        margin-bottom: 18px;
+      }
+    }
+    &__item-btn {
+      font-size: 16px;
+      min-height: 86px;
+      max-height: 86px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
+}

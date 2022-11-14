@@ -1,0 +1,94 @@
+.title-big {
+  font-family: 'Stapel Expanded', sans-serif;
+  font-size: 48px;
+  line-height: 145%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color);
+  margin-bottom: 12px;
+
+  &__wrapper {
+    width: 100%;
+    max-width: 765px;
+    margin: 0 0 44px auto;
+    text-align: right;
+  }
+
+  &__sub {
+    font-size: 20px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 800px) {
+  .title-big {
+    font-size: 38px;
+    &__sub {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .title-big {
+    font-size: 28px;
+    &__sub {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .title-big {
+    font-size: 24px;
+    &__wrapper {
+      margin-bottom: 20px;
+    }
+    &__sub {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .title-big {
+    font-size: 18px;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+
+.title {
+  font-family: 'Stapel Expanded', sans-serif;
+  font-size: 36px;
+  line-height: 145%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: var(--color);
+}
+
+@media (max-width: 950px) {
+  .title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 700px) {
+  .title {
+    br {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .title {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+}
