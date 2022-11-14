@@ -1,6 +1,9 @@
 .benefits {
   padding-bottom: 120px;
+  position: relative;
   &__wrapper {
+    position: relative;
+    z-index: 1;
   }
 
   &__title {
@@ -64,10 +67,22 @@
     line-height: 145%;
     letter-spacing: 0.05em;
   }
+
+  &__bg {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 260px;
+    display: flex;
+    pointer-events: none;
+  }
 }
 
 @media (max-width: 768px) {
   .benefits {
+    &__bg {
+      display: none;
+    }
     &__title {
       font-size: 24px;
     }

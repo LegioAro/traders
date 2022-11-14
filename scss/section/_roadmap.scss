@@ -1,9 +1,12 @@
 .roadmap {
   padding-bottom: 100px;
+  position: relative;
   &__wrapper {
     font-size: 16px;
     line-height: 145%;
     letter-spacing: 0.05em;
+    position: relative;
+    z-index: 1;
   }
 
   &__title {
@@ -149,6 +152,15 @@
       }
     }
   }
+
+  &__bg {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -120px;
+    display: flex;
+    pointer-events: none;
+  }
 }
 @media (max-width: 950px) {
   .roadmap {
@@ -171,6 +183,9 @@
 }
 @media (max-width: 768px) {
   .roadmap {
+    &__bg {
+      display: none;
+    }
     &__list {
       grid-template-columns: repeat(1, 1fr);
       &.border {

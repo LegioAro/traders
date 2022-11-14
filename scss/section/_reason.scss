@@ -1,5 +1,6 @@
 .reasons {
   padding-bottom: 172px;
+  position: relative;
   &-bg {
     background-image: url(../img/reason/bg.png);
     background-repeat: no-repeat;
@@ -13,6 +14,8 @@
     grid-template-rows: auto;
     grid-column-gap: 40px;
     margin-bottom: 80px;
+    position: relative;
+    z-index: 1;
     &:last-child {
       margin-bottom: 0;
     }
@@ -177,10 +180,32 @@
     text-align: right;
     letter-spacing: 0.05em;
   }
+
+  &__bg {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    pointer-events: none;
+
+    &-1 {
+      top: -80px;
+      left: 0;
+    }
+    &-2 {
+      top: 65px;
+      left: 0;
+    }
+  }
 }
 
 @media (max-width: 1050px) {
   .reasons {
+    &__bg {
+      &-1 {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
     &__wrapper {
       grid-template-columns: repeat(1, 1fr);
       &.revers {
@@ -218,6 +243,9 @@
 @media (max-width: 768px) {
   .reasons {
     padding-bottom: 100px;
+    &__bg {
+      display: none;
+    }
     &__wrapper {
       margin-bottom: 50px;
     }

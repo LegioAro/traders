@@ -24,6 +24,15 @@
   color: #fff;
   position: relative;
 
+  &:hover {
+    &::before {
+      right: 0;
+      bottom: 15px;
+      width: 45px;
+      height: 45px;
+    }
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -36,6 +45,7 @@
     background-position: center;
     background-size: contain;
     display: flex;
+    transition: 0.3s;
   }
 
   &.btn-2 {
