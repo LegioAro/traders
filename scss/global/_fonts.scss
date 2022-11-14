@@ -99,7 +99,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-star3:before {
+  content: '\e903';
+  color: #8348e4;
+}
 .icon-star:before {
   content: '\e900';
   color: var(--color);

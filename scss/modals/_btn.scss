@@ -22,10 +22,34 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #fff;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    right: -10px;
+    bottom: 10px;
+    background-image: url(../img/click.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+  }
 
   &.btn-2 {
     background-image: none;
     border: 1px solid #fff;
+    &::before {
+      display: none;
+    }
+  }
+
+  &.btn-3 {
+    &::before {
+      display: none;
+    }
   }
 
   p {
